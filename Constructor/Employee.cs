@@ -12,6 +12,8 @@ namespace Constructor
         public string Name { get; set; }
         public int Salary { get; set; }
 
+        public static int IncomeTax { get; set; }
+
         public Employee()//parametrlees constructor or default 
         {
             this.Id = 10;
@@ -25,10 +27,16 @@ namespace Constructor
             this.Name = name;
             this.Salary = salary;
         }
+        public Employee(Employee emp)//copy Constructor
+        {
+            this.Id =emp. Id;
+            this.Name = emp.Name;
+            this.Salary = emp.Salary;
+        }
 
         public void showdata()
         {
-            Console.WriteLine("Id:" + this.Id);
+            Console.WriteLine(" Id:" + this.Id);
             Console.WriteLine("Name:" + this.Name);
             Console.WriteLine("Salary:"+ this.Salary);
 
