@@ -8,24 +8,29 @@ namespace Constructor
 {
     internal class Employee
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Salary { get; set; }
 
-        public Employee()
+        public Employee()//parametrlees constructor or default 
         {
-            Id = 10;
-            Name = "Raaj";
-            Salary = 10000;
+            this.Id = 10;
+            this.Name = "Raaj";
+            this.Salary = 10000;
         }
 
-        public Employee(int a,int b)
+        public Employee(int id, string name,int salary)//parameterrized constructor
         {
-
+            this.Id = id;
+            this.Name = name;
+            this.Salary = salary;
         }
 
-        public void putdata()
+        public void showdata()
         {
-            //Console.WriteLine("Id:"+Id);
-            //Console.WriteLine("Name:"+Name);
-            //Console.WriteLine("Salary:"+Salary);
+            Console.WriteLine("Id:" + this.Id);
+            Console.WriteLine("Name:" + this.Name);
+            Console.WriteLine("Salary:"+ this.Salary);
 
         }
         public void getdata()
@@ -37,10 +42,7 @@ namespace Constructor
             //Console.WriteLine("Enter Employee salary:");
             //Salary = Convert.ToInt32(Console.ReadLine());
         }
-        public int Id { get; set; }
-        public String Name { get; set; }
-        public int Salary { get; set; }
-
+      
 
        
     }
