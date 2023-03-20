@@ -10,10 +10,7 @@ public class Program
 
 
 
-        Employee emp1 = new Employee();
-        Console.WriteLine("please enter the id");
-        Console.WriteLine("please enter the Name");
-        Console.WriteLine("please enter the Salary");//(parameterless constructor)
+        Employee emp1 = new Employee();//(parameterless constructor)
         emp1.showdata();
 
         Employee emp2 = new Employee(11, "Vijay", 20000);//(Parameterized constructor
