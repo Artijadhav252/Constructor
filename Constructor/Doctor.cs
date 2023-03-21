@@ -31,6 +31,8 @@ namespace Constructor
             this.Degree = degree;
         }
 
+
+
         public Doctor(Doctor doctor)
         {
             Console.WriteLine("This is the copy constructor");
